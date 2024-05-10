@@ -1,4 +1,7 @@
 microk8s kubectl delete -f /home/mrefky/Thunder/InboudGW/InboundGW.yaml
+./delete_kafka.sh
+./install_kafka.sh
+
 go build .
 /home/mrefky/Thunder/InboudGW/create_inboundgw.sh
 docker build -t localhost:32000/inboundgw  /home/mrefky/Thunder/InboudGW/.
