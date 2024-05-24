@@ -44,6 +44,7 @@
 
 ![STS](./Test.jpg?raw=true "Sts")
 
+![STS](./test1.jpg?raw=true "Sts")
 
 # Connection Parameters
 
