@@ -14,9 +14,6 @@
 * run ./build.sh
 
 
-# Deployments
-
-![Arch](./deploy.jpg?raw=true "Arch")
 
 # Statefullsets
 
@@ -24,7 +21,7 @@
 
 # Pods
 
-![Arch](./img2.jpg?raw=true "Arch")
+![Arch](./po.jpg?raw=true "Arch")
 
 # Services
 
