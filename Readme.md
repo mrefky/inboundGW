@@ -8,6 +8,9 @@
 # To install do the following steps
 
 * run git clone https://github.com/mrefky/inboundGW.git
+* cd ./inboundGW
+* chmod a+x *.sh
+* microk8s.kubectl delete sts,deploy,pvc,svc,cm --all
 * run ./build.sh
 
 
