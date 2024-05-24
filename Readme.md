@@ -9,8 +9,8 @@
 
 * If microk8s is not installed then use re_install.sh to iinstall it with all required addons.
 * use microk8s.inspect to see if there is anything needs corrections and follow the results.
-* install docker if it is not installed.
-* install k9s if it is not installed.
+* install docker if it is not installed (./install_docker.sh).
+* install k9s if it is not installed (./install_k9s.sh).
 * install kafka offset explorer if not installed.
 * git clone https://github.com/mrefky/inboundGW.git
 * cd ./inboundGW
