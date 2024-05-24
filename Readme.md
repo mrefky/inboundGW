@@ -6,20 +6,18 @@
 
 
 # To install do the following steps
-
-* If microk8s is not installed then use re_install.sh to iinstall it with all required addons.
-* use microk8s.inspect to see if there is anything needs corrections and follow the results.
-* install docker if it is not installed (./install_docker.sh).
-* install helm if not installed (./get_helm.sh && repo.sh).
-* install k9s if it is not installed (./install_k9s.sh).
+* install ubuntu desktop [Ubuntu 22.04.3 LTS]
+* make sure that your nextork is 192.168.169.0/24
+* re_install.sh to iinstall microk8s with all required addons.
+* use microk8s.inspect to see if there is anything needs corrections and follow the results [make sure that the local registory is conigured propoerly by adding the file /etc/docker/daemon.json].
+* install docker if  (./install_docker.sh).
+* install helm (./get_helm.sh && repo.sh).
+* install k9s (./install_k9s.sh).
 * install kafka offset explorer if not installed.
 * git clone https://github.com/mrefky/inboundGW.git
 * cd ./inboundGW
 * chmod a+x *.sh
-* microk8s.kubectl delete sts,deploy,pvc,svc,cm --all
 * ./build.sh
-
-
 
 # Statefullsets
 
