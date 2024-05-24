@@ -16,6 +16,7 @@
 * install docker (./install_docker.sh).
 * install helm (./get_helm.sh && repo.sh).
 * install k9s (./install_k9s.sh).
+* using https://webinstall.dev/golang/ install go 1.21.5 (curl -sS https://webi.sh/golang | sh) 
 * install kafka offset explorer if not installed.
 * ./build.sh
 
