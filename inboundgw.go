@@ -21,7 +21,7 @@ import (
 
 var last time.Time = time.Now()
 var current time.Time = time.Now()
-var b time.Duration = 10 * time.Millisecond
+var b time.Duration = 0 * time.Millisecond
 var producer = createProducer()
 
 type executor struct {
