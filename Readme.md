@@ -17,19 +17,19 @@
 
 # Statefullsets
 
-![Arch](./Stat1.jpg?raw=true "Arch")
+![STS](./sts.jpg?raw=true "Sts")
 
 # Pods
 
-![Arch](./po.jpg?raw=true "Arch")
+![Pods](./po.jpg?raw=true "po")
 
 # Services
 
-![Arch](./svc.jpg?raw=true "Arch")
+![Svc](./svc.jpg?raw=true "Svc")
 
 # Config Maps
 
-![Arch](./cm.jpg?raw=true "Arch")
+![CM](./cm.jpg?raw=true "cm")
 
 
 
