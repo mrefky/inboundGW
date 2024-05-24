@@ -1,3 +1,4 @@
+#!/bin/bash
 microk8s kubectl delete -f ./InboundGW.yaml
 ./delete_kafka.sh
 ./install_kafka.sh
