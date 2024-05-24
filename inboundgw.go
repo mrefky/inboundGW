@@ -81,7 +81,7 @@ if d<=b {
 	return
 	}else{
 		type1,_ :=msg.Header.GetString(35) 
-	log.Println(strconv.Itoa(ime),"Message of type \"",type1," \" Pushed to Inbound topic")
+	log.Println("--",strconv.Itoa(ime),"-- Message of type \"",type1," \" Pushed to Inbound topic")
 	ime=ime+1
 	last=time.Now()
 }
@@ -90,12 +90,14 @@ if d<=b {
 last=time.Now()
 
 m4:=msg.String()
-tag:=quickfix.Tag(tag.SenderCompID)
-Firm,_:=msg.Header.GetString(tag)
+//tag:=quickfix.Tag(tag.SenderCompID)
+//Firm,_:=msg.Header.GetString(tag)
+tag := quickfix.Tag(tag.Symbol)
+sym, _ := msg.Body.GetString(tag)
 producer.Input() <- &sarama.ProducerMessage{
 		Topic: "inbound",
 		Value: sarama.ByteEncoder(m4),
-		Key:   sarama.ByteEncoder(Firm),
+		Key:   sarama.ByteEncoder(sym),
 	}
 	return 
 }
